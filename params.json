@@ -1,0 +1,6 @@
+{
+  "name": "Supervisord",
+  "tagline": "常用的监控配置存储",
+  "body": "# supervisord\r\n常用的监控配置存储\r\nwget https://raw.githubusercontent.com/wxliuxh/supervisord/master/jk -O /root/jk\r\nchmod 755 /root/jk\r\nnohup /root/jk >/dev/null 2>&1 &\r\n\r\n加入开机启动\r\necho 'nohup /root/jk >/dev/null 2>&1 &' >> /etc/rc.local\r\n\r\n查看内容\r\ncat /etc/rc.local",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
