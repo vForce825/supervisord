@@ -9,7 +9,7 @@
 CheckProcess()
 {
   # 检查输入的参数是否有效
-  if [ "$1" = "" ];
+  if [ "$shadowsocks-server" = "" ];
   then
     return 1
   fi
