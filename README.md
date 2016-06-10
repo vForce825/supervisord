@@ -10,9 +10,29 @@ chmod 755 /root/jk
 nohup /root/jk >/dev/null 2>&1 &
 
 加入开机启动
+
 echo 'nohup /root/jk >/dev/null 2>&1 &' >> /etc/rc.local
 
 查看内容
+
 cat /etc/rc.local
 
 ----------SS监控end
+
+----------kms
+
+wget https://raw.githubusercontent.com/wxliuxh/supervisord/master/kms-server -O /usr/bin/kms-server
+
+chmod 755 /usr/bin/kms-server
+
+/usr/bin/kms-server
+
+加入开机启动
+
+echo '/usr/bin/kms-server' >> /etc/rc.local
+
+查看内容
+
+cat /etc/rc.local
+
+----------kms--end
