@@ -36,5 +36,5 @@ while [ 1 ] ; do
 /etc/init.d/shadowsocks stop
 /etc/init.d/shadowsocks start
  fi
- sleep 1
+ sleep 3
 done
