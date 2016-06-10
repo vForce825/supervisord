@@ -1,7 +1,7 @@
 centos 6 定时脚本
 安装
-yum install vixie-cron
-yum install crontabs
+yum -y install vixie-cron
+yum -y install crontabs
 说明：
 vixie-cron软件包是cron的主程序；
 crontabs软件包是用来安装、卸装、或列举用来驱动 cron 守护进程的表格的程序。
