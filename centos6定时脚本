@@ -17,7 +17,11 @@ cron 是linux的内置服务，但它不自动起来，可以用以下的方法�
 没有就加入开机自动启动:免得每次手动启动麻烦：chkconfig --level 35 crond on
 
 加入开机启动
-echo '*/1 * * * * /etc/init.d/shadowsocks status > /root/sslog.txt' >> /etc/crontab
+测试
+echo '*/1 * * * * /etc/init.d/shadowsocks status > /root/sslog.txt' >> /var/spool/cron/root
+rm /var/spool/cron/root
+echo '0 */12 * * * reboot' >> /var/spool/cron/root
 
 查看内容
-cat /etc/crontab
+cat /var/spool/cron/root
+crontab -l
