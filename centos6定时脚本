@@ -1,9 +1,10 @@
 centos 6 定时脚本
 -----------------------------------------------
 yum -y install vixie-cron crontabs
-echo 'service crond restart' >> /etc/rc.local
+echo '/sbin/service crond restart' >> /etc/rc.local
 echo '0 */12 * * * reboot' >> /var/spool/cron/root
-service crond restart
+/sbin/service crond restart
+cat /etc/rc.local
 -----------------------------------------------
 说明：
 vixie-cron软件包是cron的主程序；
