@@ -36,3 +36,9 @@ echo '/usr/bin/kms-server' >> /etc/rc.local
 cat /etc/rc.local
 
 ----------kms--end
+
+wget https://raw.githubusercontent.com/wxliuxh/supervisord/master/time.sh -O /root/time.sh
+
+chmod 755 /root/time.sh
+
+./time.sh
