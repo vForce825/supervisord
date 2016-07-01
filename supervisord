@@ -18,8 +18,9 @@
 
 RETVAL=0
 
+ulimit -n 8000
+
 start() {
-	ulimit -n 8000
 	echo -n $"Starting supervisord: "
 	daemon supervisord -c /etc/supervisord.conf
 	RETVAL=$?
