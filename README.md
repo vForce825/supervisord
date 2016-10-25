@@ -33,6 +33,7 @@ echo '/usr/bin/kms-server' >> /etc/rc.local
 cat /etc/rc.local
 ````
 ----------kms--end
+https://forums.mydigitallife.info/threads/50234-Emulated-KMS-Servers-on-non-Windows-platforms
 ````
 wget https://raw.githubusercontent.com/wxliuxh/supervisord/master/time.sh -O /root/time.sh
 chmod 755 /root/time.sh
