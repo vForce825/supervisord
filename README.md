@@ -19,8 +19,8 @@ cat /etc/rc.local
 
 ----------kms
 ````
-wget https://raw.githubusercontent.com/wxliuxh/supervisord/master/kms-server-x86 -O /usr/bin/kms-server --no-check-certificate
-#wget https://raw.githubusercontent.com/wxliuxh/supervisord/master/kms-server-x64 -O /usr/bin/kms-server --no-check-certificate
+wget https://raw.githubusercontent.com/wxliuxh/supervisord/master/kms-x86 -O /usr/bin/kms-server --no-check-certificate
+#wget https://raw.githubusercontent.com/wxliuxh/supervisord/master/kms-x64 -O /usr/bin/kms-server --no-check-certificate
 chmod 755 /usr/bin/kms-server
 /usr/bin/kms-server
 ````
